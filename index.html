@@ -38,17 +38,17 @@
       <form class="contact-me needs-validation" novalidate>
         <div class="mb-4">
           <label>Email address
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <input type="email" name="email" class="form-control" aria-describedby="emailHelp" required>
           </label>
         </div>
         <div class="mb-4">
           <label>Subject:
-            <input type="text" class="form-control" required>
+            <input type="text" name="subject" class="form-control" required>
           </label>
         </div>
         <div class="mb-4">
           <div class="form-floating">
-            <textarea class="form-control" placeholder="Message:" required></textarea>
+            <textarea class="form-control" name="message" placeholder="Message:" required></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -263,6 +263,7 @@
   <!-- Custom scripts for this template -->
   <script src="js/ca-gallery.js"></script>
   <script src="js/offCanvas.js"></script>
+  <script src="js/formHandler.js"></script>
   <script src="js/main.js"></script>
 
 
