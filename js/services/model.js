@@ -30,3 +30,44 @@ const gProjects = [
         img: 'img/projects/YelpCamp.jpg'
     },
 ]
+
+const gSpecialities = [
+    {
+        name: 'HTML5',
+        logo: '/img/logos/logo-HTML.png',
+        description: 'htmllllllll'
+    },
+    {
+        name: "JavaScript",
+        logo: '/img/logos/logo-JS.png',
+        description: 'gTranslate[this.name]'
+    },
+    {
+        name: "CSS-3",
+        logo: '/img/logos/logo-CSS.png',
+        description: 'this is css'
+    },
+    {
+        name: "NodeJS",
+        logo: '/img/logos/logo-NodeJS.png',
+        description: 'this is nodejs'
+    },
+    {
+        name: "MongoDB",
+        logo: '/img/logos/logo-mongoDB.png',
+        description: 'this is css'
+    },
+    {
+        name: "jQuery",
+        logo: '/img/logos/jQuery.png',
+        description: 'this is css'
+    },
+]
+
+
+
+
+
+function getProject(value) {
+    return gProjects[value]
+}

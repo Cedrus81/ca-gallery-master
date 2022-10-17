@@ -200,9 +200,12 @@ header.masthead {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    max-height: 100vh;
+    height: 50vw;
+    width: 100vw;
+    overflow:hidden;
 }
-header.masthead .intro-text {
+
+/* header.masthead .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
 }
@@ -241,7 +244,7 @@ header.masthead .intro-text .intro-heading {
         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
     }
-}
+} */
 .service-heading {
     margin: 15px 0;
     text-transform: none;
@@ -770,3 +773,7 @@ fieldset[disabled] .btn-xl:hover {
     padding-right: 0;
     padding-left: 0;
 }
+/* 
+.carousel-item >.img-fluid{
+    max-height: fit-content;
+} */

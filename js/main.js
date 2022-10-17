@@ -5,7 +5,8 @@ $(document).ready(init)
 $('.contact-me').submit(onContactMe)
 
 function init() {
-    _renderPortfolios()
+    _renderSpecialities()
+    _renderProjects()
 }
 
 function _onOpenModal() {
@@ -34,9 +35,23 @@ function _renderModal(project) {
 
 
 
+function _renderSpecialities() {
+    let strHTML = ''
+    // debugger
+    gSpecialities.forEach((spec, idx) => {
+        strHTML +=
+            ` <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <img class="img-fluid" src="${gSpecialities[idx].logo}"></img>
+            </span>
+            <h4 class="service-heading">${gSpecialities[idx].name}</h4>
+            <p class="text-muted">${gSpecialities[idx].description}</p>
+        </div>`
+    })
+    $('#specs').html(strHTML)
+}
 
-
-function _renderPortfolios() {
+function _renderProjects() {
     let strHTML = ''
     gProjects.forEach((project, idx) => strHTML +=
         `<div class="col-md-4 col-sm-6 portfolio-item">
@@ -79,32 +94,10 @@ function _renderModalFooter(project) {
     </a>
     `)
 }
+
 function onCloseModal() {
     $('#portfolioModal').modal('hide')
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function getProject(value) {
-    return gProjects[value]
-}
 
 
