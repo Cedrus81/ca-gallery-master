@@ -135,7 +135,8 @@ body {
     text-transform: uppercase;
 }
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: #ff702e;
+    box-shadow: none;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
@@ -191,7 +192,7 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/about/profile.jpg");
+    background-color: #233142;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -199,6 +200,7 @@ header.masthead {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    max-height: 100vh;
 }
 header.masthead .intro-text {
     padding-top: 150px;
